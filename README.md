@@ -23,3 +23,4 @@ Open http://localhost:8080
 - Responsive mobile nav drawer
 
 No build step required — plain HTML, CSS, and JavaScript.
+# WhartonDCInnovation
