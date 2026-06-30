@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12th Annual Wharton DC Innovation Summit</title>
+    <meta
+      name="description"
+      content="Wharton Club of DC Innovation Summit — October 1, 2026 at Valo Park, Tysons Corner, VA."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="nav" class="nav" aria-label="Main navigation">
+      <div class="nav-inner">
+        <button class="nav-brand" data-scroll="about" aria-label="Wharton DC Innovation Summit home">
+          <span class="nav-monogram">W</span>
+          <span class="nav-brand-text">Wharton DC Innovation Summit</span>
+        </button>
+        <div class="nav-links" role="menubar">
+          <button data-scroll="about" data-nav="about">About</button>
+          <button data-scroll="speakers" data-nav="speakers">Speakers</button>
+          <button data-scroll="agenda" data-nav="agenda">Agenda</button>
+          <button data-scroll="sponsors" data-nav="sponsors">Sponsors</button>
+          <button data-scroll="reviews" data-nav="reviews">Reviews</button>
+          <button data-scroll="register" data-nav="register" class="nav-cta">Register</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="nav-drawer" id="navDrawer" hidden>
+        <button data-scroll="about" data-nav="about">About</button>
+        <button data-scroll="speakers" data-nav="speakers">Speakers</button>
+        <button data-scroll="agenda" data-nav="agenda">Agenda</button>
+        <button data-scroll="sponsors" data-nav="sponsors">Sponsors</button>
+        <button data-scroll="reviews" data-nav="reviews">Reviews</button>
+        <button data-scroll="register" data-nav="register">Register</button>
+      </div>
+    </nav>
+
+    <header id="about" class="hero hero-parallax" data-hero="about">
+      <div class="hero-media">
+        <img
+          src="images/valo-park-hero.png"
+          alt="Valo Park atrium, Tysons Corner — summit venue"
+          class="hero-image"
+          id="heroImage"
+        />
+        <div class="hero-overlay" id="heroOverlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-kicker hero-kicker-lines" id="heroKicker">
+          <span class="hero-kicker-line" aria-hidden="true"></span>
+          Wharton Club of DC
+          <span class="hero-kicker-line" aria-hidden="true"></span>
+        </p>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="hero-title-line"><span class="title-num">12</span>TH ANNUAL WHARTON DC</span>
+          <span class="hero-title-line">INNOVATION SUMMIT</span>
+        </h1>
+        <p class="hero-meta" id="heroMeta">
+          Thursday, October 1, 2026 &middot; Valo Park, Tysons, VA
+        </p>
+        <div class="hero-actions" id="heroActions">
+          <button class="btn btn-primary" data-scroll="register">Register Now</button>
+          <button class="btn btn-ghost" data-scroll="agenda">View Agenda</button>
+        </div>
+      </div>
+      <button class="scroll-indicator" data-scroll="about-details" aria-label="Scroll to about the club">
+        <span>Scroll</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M8 3v10M4 9l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </button>
+    </header>
+
+    <main>
+      <section id="about-details" class="section section-about-details">
+        <div class="container">
+          <div class="about-details-grid">
+            <div class="about-details-block reveal">
+              <h2>What is Wharton DC?</h2>
+              <p>
+                The Wharton DC Club is a business-focused membership organization that provides opportunities
+                for networking and lifelong learning to entrepreneurs and business leaders, as well as
+                professionals from elite/top universities and business schools. With a 58-year history and a core
+                base of Wharton Business School alumni as members, our Club is an active, engaged non-profit
+                organization that values innovation, entrepreneurship, and the sharing of ideas to advance
+                well-being throughout the U.S. and beyond.
+              </p>
+            </div>
+            <div class="about-details-block reveal" data-delay="120">
+              <h2>Why?</h2>
+              <p>
+                Singular experts, critical innovators and industry leaders come together in the DC area to impart
+                wisdom that attendees can absorb, returning to work refreshed, energized and motivated to apply
+                what they have learned. Keynotes and interactive sessions will offer valuable insights to
+                representatives from fast-growing innovative companies, industry, tech, government and agile
+                smaller businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="summit-stats" class="section section-stats">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-card reveal" data-delay="0">
+              <span class="stat-value" data-count="12" data-suffix="th">0</span>
+              <span class="stat-label">Annual Summit</span>
+            </div>
+            <div class="stat-card reveal" data-delay="100">
+              <span class="stat-value" data-count="40" data-suffix="+">0</span>
+              <span class="stat-label">CEOs + Founders</span>
+            </div>
+            <div class="stat-card reveal" data-delay="200">
+              <span class="stat-value" data-count="500" data-suffix="+">0</span>
+              <span class="stat-label">represented companies</span>
+            </div>
+            <div class="stat-card reveal" data-delay="300">
+              <span class="stat-value" data-count="1000"><span class="stat-count">0</span><span class="stat-suffix">s</span></span>
+              <span class="stat-label">of past Summit Attendees</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="speakers" class="section section-speakers">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Speakers</p>
+            <h2>To be announced&hellip;</h2>
+          </div>
+          <p class="lead speakers-tba reveal">Our speaker lineup for the 2026 summit will be announced soon.</p>
+        </div>
+      </section>
+
+      <section id="attendees" class="section section-carousel">
+        <div class="container">
+          <h2 class="attendees-heading reveal">Attendees include leaders from:</h2>
+        </div>
+        <div class="logo-carousel-wrap reveal">
+          <div class="logo-carousel-fade logo-carousel-fade-left"></div>
+          <div class="logo-carousel-fade logo-carousel-fade-right"></div>
+          <div class="logo-carousel-track" id="logoCarousel"></div>
+        </div>
+      </section>
+
+      <section id="agenda" class="section section-agenda">
+        <div class="container agenda-layout">
+          <div class="section-head reveal">
+            <p class="eyebrow">Agenda</p>
+            <h2>October 1, 2026</h2>
+            <p class="lead">Full-day program from 8AM to 8PM at Valo Park.</p>
+          </div>
+          <div class="agenda-columns">
+            <ol class="agenda-timeline" id="agendaTimeline"></ol>
+            <div class="tracks-panel reveal" data-delay="150">
+              <h3>Breakout Tracks</h3>
+              <div id="tracksList"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sponsors" class="section section-sponsors">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Sponsors</p>
+            <h2>Powered by our partners</h2>
+          </div>
+          <div class="sponsor-tiers" id="sponsorTiers"></div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section section-reviews">
+        <div class="container reviews-layout">
+          <div class="section-head reveal">
+            <p class="eyebrow">Reviews</p>
+            <h2>What attendees are saying</h2>
+          </div>
+          <div class="reviews-grid" id="reviewsGrid"></div>
+          <div class="video-wrap reveal" data-delay="200">
+            <iframe
+              src="https://www.youtube.com/embed/OdG7e4e6VPs"
+              title="Wharton DC Innovation Summit highlights"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="more-info" class="section section-info-link">
+        <div class="container">
+          <p class="info-link reveal">
+            For more information visit:
+            <a href="https://www.whartondc.com/article.html?aid=5029" target="_blank" rel="noopener noreferrer">
+              https://www.whartondc.com/article.html?aid=5029
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section id="register" class="section section-register">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Register</p>
+            <h2>Secure your seat</h2>
+            <p class="lead">
+              Review the registration options below, then complete your purchase on the Wharton DC store.
+            </p>
+          </div>
+          <div class="register-promo reveal">
+            <div class="register-promo-head">
+              <p class="register-promo-deadline">Now through July 5</p>
+              <p class="register-promo-intro">Everyone who registers gets</p>
+            </div>
+            <ul class="register-promo-list">
+              <li class="register-promo-item">
+                <span class="register-promo-icon" aria-hidden="true">✓</span>
+                <div>
+                  <strong>30-day Money Back Guarantee</strong>
+                  <p>
+                    Time for you to review the program and see if it meets your needs. If not, easy to
+                    request and receive a full refund!
+                  </p>
+                </div>
+              </li>
+              <li class="register-promo-item">
+                <span class="register-promo-icon" aria-hidden="true">✓</span>
+                <div>
+                  <strong>Embassy Reception included</strong>
+                  <p>
+                    Attend the probable Embassy Reception — now being organized at the Japanese Embassy —
+                    on Friday, October 2, 2026, at no added fee. It will be at least $75/person after
+                    June 15.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-grid" id="pricingGrid"></div>
+          <p class="register-note reveal">
+            All registrations are processed through the official Wharton Club of DC store.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <span class="nav-monogram">W</span>
+          <p>Wharton Club of DC Innovation Summit</p>
+        </div>
+        <p>&copy; 2026 Wharton Club of DC. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
