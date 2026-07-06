@@ -7,7 +7,7 @@
   --line: rgba(17, 17, 17, 0.1);
   --surface: #faf8f5;
   --white: #ffffff;
-  --nav-height: 68px;
+  --nav-height: 128px;
   --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -154,8 +154,20 @@ h2 {
 .nav-brand {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   color: inherit;
+  padding: 0;
+}
+
+.nav-brand-logo {
+  display: block;
+  height: 6.25rem;
+  width: auto;
+  max-width: min(500px, 85vw);
+  object-fit: contain;
+}
+
+.nav:not(.is-scrolled) .nav-brand-logo {
+  filter: brightness(0) invert(1);
 }
 
 .nav-monogram {
@@ -1073,8 +1085,9 @@ h2 {
     display: none;
   }
 
-  .nav-brand-text {
-    max-width: none;
+  .nav-brand-logo {
+    height: 6.85rem;
+    max-width: 540px;
   }
 
   .about-details-grid {
