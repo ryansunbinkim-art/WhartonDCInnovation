@@ -7,7 +7,7 @@
   --line: rgba(17, 17, 17, 0.1);
   --surface: #faf8f5;
   --white: #ffffff;
-  --nav-height: 128px;
+  --nav-height: 200px;
   --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -160,9 +160,9 @@ h2 {
 
 .nav-brand-logo {
   display: block;
-  height: 6.25rem;
+  height: 10rem;
   width: auto;
-  max-width: min(500px, 85vw);
+  max-width: min(780px, 94vw);
   object-fit: contain;
 }
 
@@ -1086,8 +1086,8 @@ h2 {
   }
 
   .nav-brand-logo {
-    height: 6.85rem;
-    max-width: 540px;
+    height: 10.75rem;
+    max-width: 820px;
   }
 
   .about-details-grid {
