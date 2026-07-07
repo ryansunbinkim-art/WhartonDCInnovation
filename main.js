@@ -1,5 +1,19 @@
 const NAV_OFFSET = 68;
 
+const NEW_STRATEGIC_PARTNERS = [
+  { name: "Archangels Washington", img: "images/logos/partners/archangels-washington.png" },
+  { name: "Big Idea CONNECTpreneur", img: "images/logos/partners/big-idea-connectpreneur.png" },
+  { name: "Chicago Booth", img: "images/logos/partners/chicago-booth.png", label: "The University of Chicago Booth School of Business" },
+  { name: "Flourish", img: "images/logos/partners/flourish.png" },
+  { name: "Ignite Social Impact", img: "images/logos/partners/ignite-social-impact.png" },
+  { name: "INSEAD", img: "images/logos/partners/insead.png" },
+  { name: "LSE Alumni & Friends USA", img: "images/logos/partners/lse-alumni-friends-usa.png" },
+  { name: "MIT Club of Washington DC", img: "images/logos/partners/mit-club-washington-dc.png" },
+  { name: "Startup Grind Washington DC", img: "images/logos/partners/startup-grind-washington-dc.png" },
+  { name: "Society of Physician Entrepreneurs", img: "images/logos/partners/sope.png", label: "Society of Physician Entrepreneurs" },
+  { name: "Yale Club of Washington DC", img: "images/logos/partners/yale-club-washington-dc.png", label: "The Yale Club of Washington, DC" },
+];
+
 const CAROUSEL_LOGOS = [
   { name: "Amazon Web Services", img: "images/logos/attendees/aws.png" },
   { name: "Johnson & Johnson", img: "images/logos/attendees/jnj.png", size: "lg" },
@@ -21,6 +35,7 @@ const CAROUSEL_LOGOS = [
   { name: "Talkspace", img: "images/logos/attendees/talkspace.png" },
   { name: "TTR Sotheby's International Realty", img: "images/logos/attendees/ttr-sothebys.png" },
   { name: "Springboard Enterprises", img: "images/logos/attendees/springboard.png" },
+  ...NEW_STRATEGIC_PARTNERS,
 ];
 
 const REGISTER_URL = "https://www.whartondc.com/store.html?event_id=5029";
@@ -85,6 +100,14 @@ const SPONSORS = [
         name: "Fairfax County Economic Development Authority",
         img: "images/logos/partners/fceda.png",
       },
+      { name: "Refraction", img: "images/logos/partners/refraction.png" },
+    ],
+  },
+  {
+    tier: "Other Sponsors",
+    items: [
+      { name: "Echoes Media", img: "images/logos/partners/echoes-media.png" },
+      { name: "Erin Fry Photography", img: "images/logos/partners/erin-fry-photography.png" },
     ],
   },
   {
@@ -101,6 +124,7 @@ const SPONSORS = [
         name: "French-American Chamber of Commerce",
         img: "images/logos/partners/french-american-chamber.png",
       },
+      ...NEW_STRATEGIC_PARTNERS,
     ],
   },
 ];
