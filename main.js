@@ -306,7 +306,7 @@ function setupNavigation() {
 
   const sections = [
     { id: "about", nav: "about" },
-    { id: "speakers", nav: "speakers" },
+    { id: "intro", nav: "intro" },
     { id: "agenda", nav: "agenda" },
     { id: "sponsors", nav: "sponsors" },
     { id: "reviews", nav: "reviews" },
