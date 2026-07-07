@@ -93,7 +93,7 @@ const AGENDA = [
   {
     time: "5:10–6:00 PM",
     title: "Closing Keynote Fireside Chat",
-    desc: "Fireside Chat with Steve Case (Invited).",
+    desc: "Fireside Chat with Top Entrepreneur.",
   },
   {
     time: "6:00–8:00 PM",
@@ -105,7 +105,11 @@ const AGENDA = [
 const TRACKS = [
   {
     title: "Funding & Fintech Track",
-    panels: ["State of Funding", "Startup Showcase", "AI and the Future of Fintech"],
+    panels: [
+      "State of Funding",
+      "Second Healthcare Section Featuring Healthcare and Biotech Firms",
+      "AI and the Future of Fintech",
+    ],
   },
   {
     title: "Healthcare Track",
