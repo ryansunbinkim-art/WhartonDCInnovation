@@ -65,26 +65,69 @@ const PRICING = [
 ];
 
 const AGENDA = [
-  { time: "8:00 AM", title: "Registration & Networking Breakfast", desc: "Welcome reception and partner showcase." },
-  { time: "9:30 AM", title: "AI Guardrails for Enterprise", desc: "Opening keynote on responsible AI adoption." },
-  { time: "11:00 AM", title: "Future of Healthcare", desc: "Panel on digital health, policy, and investment." },
-  { time: "12:30 PM", title: "Unicorn CEO Lunch Keynote", desc: "Founder stories from scaling to market leadership." },
-  { time: "2:00 PM", title: "Breakout Tracks", desc: "Choose from three parallel innovation tracks." },
-  { time: "6:30 PM", title: "Fireside Chat + Reception", desc: "Closing conversation at Refraction Hub with Embassy Reception." },
+  { time: "8:00 AM", title: "Registration & Breakfast", desc: "8:00–8:45 AM at Valo Park." },
+  { time: "8:45 AM", title: "Transition to General Session", desc: "Valo Park Auditorium." },
+  { time: "9:00 AM", title: "Welcome & Opening Remarks", desc: "General session, Valo Park Auditorium." },
+  {
+    time: "9:15 AM",
+    title: "Opening Keynote CEO Panel",
+    desc: "Innovating to Scale a $1 Billion Business — Lessons from Unicorn CEOs.",
+  },
+  { time: "10:15 AM", title: "Break", desc: "10:15–10:25 AM." },
+  { time: "10:25 AM", title: "Keynote Panel: Healthcare", desc: "The Future of Healthcare." },
+  { time: "11:25 AM", title: "Break & Networking", desc: "11:25–11:40 AM." },
+  {
+    time: "11:40 AM",
+    title: "Breakout Sessions 1",
+    desc: "Parallel tracks in the Auditorium, Conference Room B, and Conference Room D.",
+  },
+  { time: "12:40 PM", title: "Lunch & Networking", desc: "Valo Park Conference Center." },
+  { time: "1:25 PM", title: "Mid-day Keynote Panel: AI", desc: "Does AI Need Guardrails?" },
+  { time: "2:25 PM", title: "Break & Networking", desc: "2:25–2:40 PM." },
+  {
+    time: "2:40 PM",
+    title: "Breakout Sessions 2",
+    desc: "Parallel tracks in the Auditorium, Conference Room B, and Conference Room D.",
+  },
+  { time: "3:40 PM", title: "Break & Networking", desc: "3:40–3:55 PM." },
+  {
+    time: "3:55 PM",
+    title: "Breakout Sessions 3",
+    desc: "Parallel tracks in the Auditorium, Conference Room B, and Conference Room D.",
+  },
+  { time: "4:55 PM", title: "Break & Networking", desc: "4:55–5:10 PM." },
+  {
+    time: "5:10 PM",
+    title: "Closing Keynote Fireside Chat",
+    desc: "Fireside Chat with Steve Case (Invited).",
+  },
+  {
+    time: "6:00 PM",
+    title: "Networking Reception @ Refraction",
+    desc: "Valo Park, 8th Floor. 6:00–8:00 PM.",
+  },
 ];
 
 const TRACKS = [
   {
-    title: "Healthcare & Life Sciences",
-    panels: ["Digital therapeutics", "Policy and reimbursement", "Biotech venture outlook"],
+    title: "Funding & Fintech Track",
+    panels: ["State of Funding", "Startup Showcase", "AI and the Future of Fintech"],
   },
   {
-    title: "Funding & Fintech",
-    panels: ["Growth equity trends", "AI in financial services", "Founder fundraising playbook"],
+    title: "Healthcare Track",
+    panels: [
+      "The Future of Food and AgTech",
+      "The Next Era of Primary Care",
+      "Will AI Completely Transform Healthcare?",
+    ],
   },
   {
-    title: "Transformative Technologies",
-    panels: ["Generative AI in operations", "Cybersecurity for scale-ups", "Future of work automation"],
+    title: "Transformative Technologies Track",
+    panels: [
+      "The Latest Developments in Civilian and Defence Aerospace",
+      "AI and the Future of Work",
+      "The Outlook for Quantum Computing",
+    ],
   },
 ];
 
