@@ -65,46 +65,40 @@ const PRICING = [
 ];
 
 const AGENDA = [
-  { time: "8:00 AM", title: "Registration & Breakfast", desc: "8:00–8:45 AM at Valo Park." },
-  { time: "8:45 AM", title: "Transition to General Session", desc: "Valo Park Auditorium." },
-  { time: "9:00 AM", title: "Welcome & Opening Remarks", desc: "General session, Valo Park Auditorium." },
+  { time: "8:00–8:45 AM", title: "Registration & Breakfast", desc: "Valo Park." },
+  { time: "9:00–9:15 AM", title: "Welcome & Opening Remarks", desc: "General session, Valo Park Auditorium." },
   {
-    time: "9:15 AM",
+    time: "9:15–10:15 AM",
     title: "Opening Keynote CEO Panel",
     desc: "Innovating to Scale a $1 Billion Business — Lessons from Unicorn CEOs.",
   },
-  { time: "10:15 AM", title: "Break", desc: "10:15–10:25 AM." },
-  { time: "10:25 AM", title: "Keynote Panel: Healthcare", desc: "The Future of Healthcare." },
-  { time: "11:25 AM", title: "Break & Networking", desc: "11:25–11:40 AM." },
+  { time: "10:25–11:25 AM", title: "Keynote Panel: Healthcare", desc: "The Future of Healthcare." },
   {
-    time: "11:40 AM",
+    time: "11:40 AM–12:40 PM",
     title: "Breakout Sessions 1",
-    desc: "Parallel tracks in the Auditorium, Conference Room B, and Conference Room D.",
+    desc: "Parallel tracks — see Breakout Tracks panel.",
   },
-  { time: "12:40 PM", title: "Lunch & Networking", desc: "Valo Park Conference Center." },
-  { time: "1:25 PM", title: "Mid-day Keynote Panel: AI", desc: "Does AI Need Guardrails?" },
-  { time: "2:25 PM", title: "Break & Networking", desc: "2:25–2:40 PM." },
+  { time: "12:40–1:25 PM", title: "Lunch & Networking", desc: "Valo Park Conference Center." },
+  { time: "1:25–2:25 PM", title: "Mid-day Keynote Panel: AI", desc: "Does AI Need Guardrails?" },
   {
-    time: "2:40 PM",
+    time: "2:40–3:40 PM",
     title: "Breakout Sessions 2",
-    desc: "Parallel tracks in the Auditorium, Conference Room B, and Conference Room D.",
+    desc: "Parallel tracks — see Breakout Tracks panel.",
   },
-  { time: "3:40 PM", title: "Break & Networking", desc: "3:40–3:55 PM." },
   {
-    time: "3:55 PM",
+    time: "3:55–4:55 PM",
     title: "Breakout Sessions 3",
-    desc: "Parallel tracks in the Auditorium, Conference Room B, and Conference Room D.",
+    desc: "Parallel tracks — see Breakout Tracks panel.",
   },
-  { time: "4:55 PM", title: "Break & Networking", desc: "4:55–5:10 PM." },
   {
-    time: "5:10 PM",
+    time: "5:10–6:00 PM",
     title: "Closing Keynote Fireside Chat",
     desc: "Fireside Chat with Steve Case (Invited).",
   },
   {
-    time: "6:00 PM",
+    time: "6:00–8:00 PM",
     title: "Networking Reception @ Refraction",
-    desc: "Valo Park, 8th Floor. 6:00–8:00 PM.",
+    desc: "Valo Park, 8th Floor.",
   },
 ];
 
