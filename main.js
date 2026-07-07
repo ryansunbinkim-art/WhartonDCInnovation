@@ -57,11 +57,6 @@ const PRICING = [
     price: "$195.00",
     desc: "Just $195/person for full access for all sessions live (for you and each of your guests — must pay this rate per person) & Embassy. Maximum of 4/member. You must list the name of the Strategic Partner of which you are currently a member to qualify for this rate. Please do so in the \"Special Instructions\" when you register. Thank you.",
   },
-  {
-    name: "Innovation Summit: VIP Thomas Edison Innovation Supporter",
-    price: "$500.00",
-    desc: "$500/person, inclusive. Includes Innovation Summit and Embassy reception. Thanks for your tax-deductible contribution!",
-  },
 ];
 
 const AGENDA = [
