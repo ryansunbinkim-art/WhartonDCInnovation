@@ -1,0 +1,20 @@
+{
+  "name": "wharton-dc-innovation",
+  "version": "1.0.0",
+  "description": "12th Annual Wharton DC Innovation Summit website",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "wharton",
+    "innovation",
+    "summit"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
