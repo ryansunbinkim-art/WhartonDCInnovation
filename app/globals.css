@@ -8,8 +8,8 @@
   --surface: #faf8f5;
   --white: #ffffff;
   --nav-height: 68px;
-  --serif: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --serif: var(--font-serif), "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --sans: var(--font-sans), "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -21,6 +21,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--surface);
 }
 
 body {
@@ -539,7 +540,8 @@ h2 {
   animation: logoScroll 45s linear infinite;
 }
 
-.logo-carousel-wrap.is-paused .logo-carousel-track {
+.logo-carousel-wrap.is-paused .logo-carousel-track,
+.logo-carousel-wrap:hover .logo-carousel-track {
   animation-play-state: paused;
 }
 

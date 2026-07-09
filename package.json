@@ -1,10 +1,13 @@
 {
   "name": "v0-project",
   "version": "1.0.0",
-  "description": "Production-ready static website built from the [Figma Make conference design](https://www.figma.com/make/qJaUNCK28O9GNhSpkDtdtG/Conference-website-outline).",
-  "main": "main.js",
+  "description": "Wharton Club of DC Innovation Summit website.",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "repository": {
     "type": "git",
@@ -13,12 +16,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/ryansunbinkim-art/WhartonDCInnovation/issues"
   },
   "homepage": "https://github.com/ryansunbinkim-art/WhartonDCInnovation#readme",
   "dependencies": {
-    "@vercel/analytics": "^2.0.1"
+    "@vercel/analytics": "^2.0.1",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
   }
 }
