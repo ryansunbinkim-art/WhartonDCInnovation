@@ -1,0 +1,24 @@
+{
+  "name": "v0-project",
+  "version": "1.0.0",
+  "description": "Production-ready static website built from the [Figma Make conference design](https://www.figma.com/make/qJaUNCK28O9GNhSpkDtdtG/Conference-website-outline).",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryansunbinkim-art/WhartonDCInnovation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ryansunbinkim-art/WhartonDCInnovation/issues"
+  },
+  "homepage": "https://github.com/ryansunbinkim-art/WhartonDCInnovation#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
