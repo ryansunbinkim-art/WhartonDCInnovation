@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=7" />
   </head>
   <body>
     <nav id="nav" class="nav" aria-label="Main navigation">
@@ -32,6 +32,7 @@
           <button data-scroll="about" data-nav="about">About</button>
           <button data-scroll="intro" data-nav="intro">Intro</button>
           <button data-scroll="agenda" data-nav="agenda">Agenda</button>
+          <button data-scroll="speakers" data-nav="speakers">Speakers</button>
           <button data-scroll="sponsors" data-nav="sponsors">Sponsors</button>
           <button data-scroll="reviews" data-nav="reviews">Reviews</button>
           <button data-scroll="register" data-nav="register" class="nav-cta">Register</button>
@@ -44,6 +45,7 @@
         <button data-scroll="about" data-nav="about">About</button>
         <button data-scroll="intro" data-nav="intro">Intro</button>
         <button data-scroll="agenda" data-nav="agenda">Agenda</button>
+        <button data-scroll="speakers" data-nav="speakers">Speakers</button>
         <button data-scroll="sponsors" data-nav="sponsors">Sponsors</button>
         <button data-scroll="reviews" data-nav="reviews">Reviews</button>
         <button data-scroll="register" data-nav="register">Register</button>
@@ -185,6 +187,26 @@
         </div>
       </section>
 
+      <section id="speakers" class="section section-speakers">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Speakers</p>
+            <h2>2026 Keynote Speakers</h2>
+            <p class="lead">
+              Hover a speaker to read their biography. On a phone, tap the photo.
+            </p>
+          </div>
+          <div class="speaker-grid speaker-grid-keynote" id="keynoteGrid"></div>
+          <div class="section-head speaker-subhead reveal">
+            <h2>2026 Session Panel Speakers</h2>
+            <p class="lead">
+              Moderators and panelists across healthcare, AI, cybersecurity, food, quantum, and the future of work.
+            </p>
+          </div>
+          <div class="speaker-grid" id="panelistGrid"></div>
+        </div>
+      </section>
+
       <section id="sponsors" class="section section-sponsors">
         <div class="container">
           <div class="section-head reveal">
@@ -285,6 +307,7 @@
       import { inject } from './node_modules/@vercel/analytics/dist/index.mjs';
       inject();
     </script>
-    <script src="main.js"></script>
+    <script src="speakers.js?v=4"></script>
+    <script src="main.js?v=4"></script>
   </body>
 </html>

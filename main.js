@@ -260,6 +260,74 @@ function renderPricing() {
   });
 }
 
+function escapeHtml(value) {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function createSpeakerCard(speaker, index) {
+  const card = document.createElement("article");
+  card.className = "speaker-card reveal";
+  card.style.setProperty("--delay", `${(index % 6) * 70}ms`);
+  card.tabIndex = 0;
+  const session = speaker.session
+    ? `<p class="speaker-session">${escapeHtml(speaker.session)}</p>`
+    : "";
+  const paragraphs = speaker.bio
+    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
+    .join("");
+  card.innerHTML = `
+    <img
+      class="speaker-photo"
+      src="${escapeHtml(speaker.photo)}"
+      alt="${escapeHtml(speaker.name)}, ${escapeHtml(speaker.title)}"
+      width="620"
+      height="750"
+      loading="lazy"
+    />
+    <div class="speaker-hover">
+      <h3>${escapeHtml(speaker.name)}</h3>
+      <p class="speaker-title">${escapeHtml(speaker.title)}</p>
+      ${session}
+      <div class="speaker-bio">${paragraphs}</div>
+    </div>
+  `;
+  card.addEventListener("click", () => {
+    if (window.matchMedia("(hover: hover)").matches) return;
+    document.querySelectorAll(".speaker-card.is-open").forEach((openCard) => {
+      if (openCard !== card) openCard.classList.remove("is-open");
+    });
+    card.classList.toggle("is-open");
+  });
+  card.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      card.click();
+    }
+    if (event.key === "Escape") {
+      card.classList.remove("is-open");
+    }
+  });
+  return card;
+}
+
+function renderSpeakers() {
+  const keynoteGrid = document.getElementById("keynoteGrid");
+  const panelistGrid = document.getElementById("panelistGrid");
+  if (!keynoteGrid || !panelistGrid || typeof SPEAKERS === "undefined") return;
+
+  SPEAKERS.filter((speaker) => speaker.group === "keynote").forEach((speaker, index) => {
+    keynoteGrid.appendChild(createSpeakerCard(speaker, index));
+  });
+  SPEAKERS.filter((speaker) => speaker.group === "panelist").forEach((speaker, index) => {
+    panelistGrid.appendChild(createSpeakerCard(speaker, index));
+  });
+}
+
 function renderAgenda() {
   const timeline = document.getElementById("agendaTimeline");
   AGENDA.forEach((item, index) => {
@@ -368,6 +436,7 @@ function setupNavigation() {
     { id: "about", nav: "about" },
     { id: "intro", nav: "intro" },
     { id: "agenda", nav: "agenda" },
+    { id: "speakers", nav: "speakers" },
     { id: "sponsors", nav: "sponsors" },
     { id: "reviews", nav: "reviews" },
     { id: "register", nav: "register" },
@@ -516,6 +585,7 @@ function setupCountUp() {
 function init() {
   renderCarousel();
   renderAgenda();
+  renderSpeakers();
   renderSponsors();
   renderReviews();
   renderPricing();
