@@ -42,20 +42,20 @@ const REGISTER_URL = "https://www.whartondc.com/store.html?event_id=5029";
 
 const PRICING = [
   {
-    name: "2026 Wharton DC Innov Summit: Wharton DC Member/Guest - Super Early Bird",
-    price: "$195.00",
-    desc: "Just $195/person for full access for all sessions live (for you and each of your guests — must pay this rate per person) & Embassy. Maximum of 4/member.",
+    name: "2026 WhartonDC Innov Summit+Embassy: Wharton DC Member/Guest-SPECIAL",
+    price: "$147.00",
+    desc: "Just $147/person for full access for all sessions live (for you and each of your guests — must pay this rate per person) + Japanese Embassy Reception Friday night, October 2. Maximum of 4/member.",
   },
   {
-    name: "2026 Wharton DC Innov Summit: Public - All Welcome - SUPER EARLY BIRD",
-    price: "$395.00",
-    desc: "Just $395/person for full access for all sessions live (for you and each of your guests — must pay this rate per person) & Embassy. 30-day money back guarantee.",
+    name: "2026 WhartonDC Innov Summit+Embassy: Partner Member/Guest-SPECIAL",
+    price: "$147.00",
+    desc: "Just $147/person for full access for all sessions live (for you and each of your guests — must pay this rate per person) + Japanese Embassy Reception Friday night, October 2. Maximum of 4/member. Please enter the Partner name / code under “Special Instructions” when you register. Thanks!",
+  },
+  {
+    name: "2026 WhartonDC Innov Summit+Embassy: Public/Guest-SPECIAL",
+    price: "$177.00",
+    desc: "Just $177/person for full access for all sessions live (for you and each of your guests — must pay this rate per person) + Japanese Embassy Reception Friday night, October 2. Maximum of 4/member.",
     featured: true,
-  },
-  {
-    name: "2026 Wharton DC Innov Summit: Strategic Partner Member/Guest - Super Early Bird",
-    price: "$195.00",
-    desc: "Just $195/person for full access for all sessions live (for you and each of your guests — must pay this rate per person) & Embassy. Maximum of 4/member. You must list the name of the Strategic Partner of which you are currently a member to qualify for this rate. Please do so in the \"Special Instructions\" when you register. Thank you.",
   },
 ];
 
